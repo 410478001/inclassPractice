@@ -176,20 +176,39 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMTwtMVxubnVtMjwtMTAwXG5udW0xK251bTJcbm51bTEtbnVtMlxubnVtMSpudW0yXG5udW0xL251bTJcbjEwMCUlMyAjIzEwMOmZpOS7pTPlvozmiYDlvpfppJjmlbhcbjJeMyAjIzLnmoQz5qyh5pa5XG5gYGAifQ== -->
+<pre class="r"><code>num1&lt;-1
+num2&lt;-100
+num1+num2
+num1-num2
+num1*num2
+num1/num2
+100%%3 ##100除以3後所得餘數
+2^3 ##2的3次方</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtMTwtMS41Njhcbm51bTI8LTIuMTIxXG5yb3VuZChudW0xLGRpZ2l0cyA9IDIpICPlm5vmjajkupTlhaXoh7PlsI/mlbjpu57nrKzkuozkvY1cbnJvdW5kKG51bTIsZGlnaXRzID0gMSkgI+Wbm+aNqOS6lOWFpeiHs+Wwj+aVuOm7nuesrOS4gOS9jVxuZmxvb3IobnVtMSkgIyMxLjU2OFxuY2VpbGluZyhudW0yKSAjIzIuMTIxXG5gYGAifQ== -->
+<pre class="r"><code>num1&lt;-1.568
+num2&lt;-2.121
+round(num1,digits = 2) #四捨五入至小數點第二位
+round(num2,digits = 1) #四捨五入至小數點第一位
+floor(num1) ##1.568
+ceiling(num2) ##2.121</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYjwtXCLkvaDlpb1cIlxuYlZlY3RvcjwtYyhcIuS9oOWlvVwiLFwiSG93IGFyZSB5b3U/XCIpXG5gYGAifQ== -->
+<pre class="r"><code>b&lt;-&quot;你好&quot;
+bVector&lt;-c(&quot;你好&quot;,&quot;How are you?&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgMjAxOC0wOS0yNiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNClRoaXMgaXMgYW4gW1IgTWFya2Rvd25dKGh0dHA6Ly9ybWFya2Rvd24ucnN0dWRpby5jb20pIE5vdGVib29rLiBXaGVuIHlvdSBleGVjdXRlIGNvZGUgd2l0aGluIHRoZSBub3RlYm9vaywgdGhlIHJlc3VsdHMgYXBwZWFyIGJlbmVhdGggdGhlIGNvZGUuIA0KDQpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIA0KDQpgYGB7cn0NCnBsb3QoY2FycykNCmBgYA0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgMjAxOC0wOS0yNiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCmBgYHtyfQ0KbnVtMTwtMQ0KbnVtMjwtMTAwDQpudW0xK251bTINCm51bTEtbnVtMg0KbnVtMSpudW0yDQpudW0xL251bTINCjEwMCUlMyAjIzEwMOmZpOS7pTPlvozmiYDlvpfppJjmlbgNCjJeMyAjIzLnmoQz5qyh5pa5DQpgYGANCmBgYHtyfQ0KbnVtMTwtMS41NjgNCm51bTI8LTIuMTIxDQpyb3VuZChudW0xLGRpZ2l0cyA9IDIpICPlm5vmjajkupTlhaXoh7PlsI/mlbjpu57nrKzkuozkvY0NCnJvdW5kKG51bTIsZGlnaXRzID0gMSkgI+Wbm+aNqOS6lOWFpeiHs+Wwj+aVuOm7nuesrOS4gOS9jQ0KZmxvb3IobnVtMSkgIyMxLjU2OA0KY2VpbGluZyhudW0yKSAjIzIuMTIxDQpgYGANCmBgYHtyfQ0KYjwtIuS9oOWlvSINCmJWZWN0b3I8LWMoIuS9oOWlvSIsIkhvdyBhcmUgeW91PyIpDQpgYGANCg0K</div>
 
 
 
