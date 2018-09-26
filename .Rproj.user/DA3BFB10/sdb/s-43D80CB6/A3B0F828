@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "---\ntitle: \"R 2018-09-26\"\noutput: html_notebook\n---\n\n```{r}\nnum1<-1\nnum2<-100\nnum1+num2\nnum1-num2\nnum1*num2\nnum1/num2\n100%%3 ##100除以3後所得餘數\n2^3 ##2的3次方\n```\n```{r}\nnum1<-1.568\nnum2<-2.121\nround(num1,digits = 2) #四捨五入至小數點第二位\nround(num2,digits = 1) #四捨五入至小數點第一位\nfloor(num1) ##1.568\nceiling(num2) ##2.121\n```\n```{r}\nb<-\"你好\"\nbVector<-c(\"你好\",\"How are you?\")\n```\n\n",
+    "contents" : "---\ntitle: \"R 2018-09-26\"\noutput: html_notebook\n---\n\n```{r}\nnum1<-1\nnum2<-100\nnum1+num2\nnum1-num2\nnum1*num2\nnum1/num2\n100%%3 ##100除以3後所得餘數\n2^3 ##2的3次方\n```\n```{r}\nnum1<-1.568\nnum2<-2.121\nround(num1,digits = 2) #四捨五入至小數點第二位\nround(num2,digits = 1) #四捨五入至小數點第一位\nfloor(num1) ##1.568\nceiling(num2) ##2.121\n```\n```{r}\nb<-\"你好\"\nbVector<-c(\"你好\",\"How are you?\")\n```\n\n```{r}\nlibrary(readr)\nstudent <- read_csv(\"https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv\")\nlibrary(dplyr)\nlibrary(magrittr)\nstudent %<>% mutate(\n  身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))\n```\n```{r}\nstudent$出生地\n```\n```{r}\nas.factor(student$出生地) -> student$出生地\nlevels(student$出生地)\ntable(student$出生地)\n```\n```{r}\nfactor(student$身高級距,\n       levels=c(\"(0,150]\",\"(150,155]\", \"(155,160]\", \"(160,165]\" ,\"(165,170]\", \"(170,175]\" ,\"(175,180]\" ,\"(180,185]\", \"(185,200]\"),\n       ordered=TRUE) -> student$身高級距\n```\n\n",
     "created" : 1537947498036.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "144047049",
+    "hash" : "81394989",
     "id" : "A3B0F828",
-    "lastKnownWriteTime" : 1537949809,
-    "last_content_update" : 1537949809361,
+    "lastKnownWriteTime" : 1537952716,
+    "last_content_update" : 1537952716811,
     "path" : "D:/inclassPractice/practice_0926.Rmd",
     "project_path" : "practice_0926.Rmd",
     "properties" : {

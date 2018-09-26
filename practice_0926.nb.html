@@ -207,8 +207,39 @@ bVector&lt;-c(&quot;你好&quot;,&quot;How are you?&quot;)</code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShyZWFkcilcbnN0dWRlbnQgPC0gcmVhZF9jc3YoXCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vdHBlbWFydGluL2NvdXJzZS0xMDctMS1wcm9ncmFtbWluZy1mb3ItZGF0YS1zY2llbmNlL21hc3Rlci9kYXRhL3N0dWRlbnQuY3N2XCIpXG5saWJyYXJ5KGRwbHlyKVxubGlicmFyeShtYWdyaXR0cilcbnN0dWRlbnQgJTw+JSBtdXRhdGUoXG4gIOi6q+mrmOe0mui3nT1jdXQo6Lqr6auYLGMoMCwxNTAsMTU1LDE2MCwxNjUsMTcwLDE3NSwxODAsMTg1LDIwMCkpKVxuYGBgIn0= -->
+<pre class="r"><code>library(readr)
+student &lt;- read_csv(&quot;https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv&quot;)
+library(dplyr)
+library(magrittr)
+student %&lt;&gt;% mutate(
+  身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudCTlh7rnlJ/lnLBcbmBgYCJ9 -->
+<pre class="r"><code>student$出生地</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYXMuZmFjdG9yKHN0dWRlbnQk5Ye655Sf5ZywKSAtPiBzdHVkZW50JOWHuueUn+WcsFxubGV2ZWxzKHN0dWRlbnQk5Ye655Sf5ZywKVxudGFibGUoc3R1ZGVudCTlh7rnlJ/lnLApXG5gYGAifQ== -->
+<pre class="r"><code>as.factor(student$出生地) -&gt; student$出生地
+levels(student$出生地)
+table(student$出生地)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmFjdG9yKHN0dWRlbnQk6Lqr6auY57Sa6LedLFxuICAgICAgIGxldmVscz1jKFwiKDAsMTUwXVwiLFwiKDE1MCwxNTVdXCIsIFwiKDE1NSwxNjBdXCIsIFwiKDE2MCwxNjVdXCIgLFwiKDE2NSwxNzBdXCIsIFwiKDE3MCwxNzVdXCIgLFwiKDE3NSwxODBdXCIgLFwiKDE4MCwxODVdXCIsIFwiKDE4NSwyMDBdXCIpLFxuICAgICAgIG9yZGVyZWQ9VFJVRSkgLT4gc3R1ZGVudCTouqvpq5jntJrot51cbmBgYCJ9 -->
+<pre class="r"><code>factor(student$身高級距,
+       levels=c(&quot;(0,150]&quot;,&quot;(150,155]&quot;, &quot;(155,160]&quot;, &quot;(160,165]&quot; ,&quot;(165,170]&quot;, &quot;(170,175]&quot; ,&quot;(175,180]&quot; ,&quot;(180,185]&quot;, &quot;(185,200]&quot;),
+       ordered=TRUE) -&gt; student$身高級距</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgMjAxOC0wOS0yNiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCmBgYHtyfQ0KbnVtMTwtMQ0KbnVtMjwtMTAwDQpudW0xK251bTINCm51bTEtbnVtMg0KbnVtMSpudW0yDQpudW0xL251bTINCjEwMCUlMyAjIzEwMOmZpOS7pTPlvozmiYDlvpfppJjmlbgNCjJeMyAjIzLnmoQz5qyh5pa5DQpgYGANCmBgYHtyfQ0KbnVtMTwtMS41NjgNCm51bTI8LTIuMTIxDQpyb3VuZChudW0xLGRpZ2l0cyA9IDIpICPlm5vmjajkupTlhaXoh7PlsI/mlbjpu57nrKzkuozkvY0NCnJvdW5kKG51bTIsZGlnaXRzID0gMSkgI+Wbm+aNqOS6lOWFpeiHs+Wwj+aVuOm7nuesrOS4gOS9jQ0KZmxvb3IobnVtMSkgIyMxLjU2OA0KY2VpbGluZyhudW0yKSAjIzIuMTIxDQpgYGANCmBgYHtyfQ0KYjwtIuS9oOWlvSINCmJWZWN0b3I8LWMoIuS9oOWlvSIsIkhvdyBhcmUgeW91PyIpDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgMjAxOC0wOS0yNiINCm91dHB1dDogaHRtbF9ub3RlYm9vaw0KLS0tDQoNCmBgYHtyfQ0KbnVtMTwtMQ0KbnVtMjwtMTAwDQpudW0xK251bTINCm51bTEtbnVtMg0KbnVtMSpudW0yDQpudW0xL251bTINCjEwMCUlMyAjIzEwMOmZpOS7pTPlvozmiYDlvpfppJjmlbgNCjJeMyAjIzLnmoQz5qyh5pa5DQpgYGANCmBgYHtyfQ0KbnVtMTwtMS41NjgNCm51bTI8LTIuMTIxDQpyb3VuZChudW0xLGRpZ2l0cyA9IDIpICPlm5vmjajkupTlhaXoh7PlsI/mlbjpu57nrKzkuozkvY0NCnJvdW5kKG51bTIsZGlnaXRzID0gMSkgI+Wbm+aNqOS6lOWFpeiHs+Wwj+aVuOm7nuesrOS4gOS9jQ0KZmxvb3IobnVtMSkgIyMxLjU2OA0KY2VpbGluZyhudW0yKSAjIzIuMTIxDQpgYGANCmBgYHtyfQ0KYjwtIuS9oOWlvSINCmJWZWN0b3I8LWMoIuS9oOWlvSIsIkhvdyBhcmUgeW91PyIpDQpgYGANCg0KYGBge3J9DQpsaWJyYXJ5KHJlYWRyKQ0Kc3R1ZGVudCA8LSByZWFkX2NzdigiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RwZW1hcnRpbi9jb3Vyc2UtMTA3LTEtcHJvZ3JhbW1pbmctZm9yLWRhdGEtc2NpZW5jZS9tYXN0ZXIvZGF0YS9zdHVkZW50LmNzdiIpDQpsaWJyYXJ5KGRwbHlyKQ0KbGlicmFyeShtYWdyaXR0cikNCnN0dWRlbnQgJTw+JSBtdXRhdGUoDQogIOi6q+mrmOe0mui3nT1jdXQo6Lqr6auYLGMoMCwxNTAsMTU1LDE2MCwxNjUsMTcwLDE3NSwxODAsMTg1LDIwMCkpKQ0KYGBgDQpgYGB7cn0NCnN0dWRlbnQk5Ye655Sf5ZywDQpgYGANCmBgYHtyfQ0KYXMuZmFjdG9yKHN0dWRlbnQk5Ye655Sf5ZywKSAtPiBzdHVkZW50JOWHuueUn+WcsA0KbGV2ZWxzKHN0dWRlbnQk5Ye655Sf5ZywKQ0KdGFibGUoc3R1ZGVudCTlh7rnlJ/lnLApDQpgYGANCmBgYHtyfQ0KZmFjdG9yKHN0dWRlbnQk6Lqr6auY57Sa6LedLA0KICAgICAgIGxldmVscz1jKCIoMCwxNTBdIiwiKDE1MCwxNTVdIiwgIigxNTUsMTYwXSIsICIoMTYwLDE2NV0iICwiKDE2NSwxNzBdIiwgIigxNzAsMTc1XSIgLCIoMTc1LDE4MF0iICwiKDE4MCwxODVdIiwgIigxODUsMjAwXSIpLA0KICAgICAgIG9yZGVyZWQ9VFJVRSkgLT4gc3R1ZGVudCTouqvpq5jntJrot50NCmBgYA0KDQo=</div>
 
 
 
