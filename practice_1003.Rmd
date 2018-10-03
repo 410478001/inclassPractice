@@ -1,0 +1,15 @@
+---
+title: "practice_1003"
+output: html_notebook
+---
+
+```{r}
+hw <- "Hadley Wickham"
+library(stringr)
+str_sub(hw, 1, 6)
+str_sub(hw, end = 6)
+str_sub(hw, 8, 14)
+str_sub(hw, 8)
+str_sub(hw, c(1, 8), c(6, 14))
+```
+
