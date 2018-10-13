@@ -1,0 +1,25 @@
+---
+title: "HW2_1012"
+output: html_document
+---
+
+```{r}
+library(readr)
+library(stringr)
+library(lubridate)
+TyphoonData <- read_csv("https://raw.githubusercontent.com/GaryLKL/course-programming-for-ds-Quiz/master/TyphoonData.csv", col_types = cols(.default = col_character()))
+Year <- TyphoonData$年份
+Year<-as.integer(Year)
+Year<-Year-1911
+Year <- as.character(Year)
+Year <- str_c("民國", Year, "年")
+```
+```{r}
+library(readr)
+library(stringr)
+TyphoonData <- read_csv("https://raw.githubusercontent.com/GaryLKL/course-programming-for-ds-Quiz/master/TyphoonData.csv", col_types = cols(.default = col_character()))
+Time <- TyphoonData$發布警報時間
+time <- str_sub(Time, start = 6, end = 7)
+table(time)
+```
+
