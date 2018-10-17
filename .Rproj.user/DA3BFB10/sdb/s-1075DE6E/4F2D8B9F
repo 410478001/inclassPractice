@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"practice_1017\"\noutput: html_document\n---\n\n```{r}\n\n```\n\n",
+    "created" : 1539760916467.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "202591852",
+    "id" : "4F2D8B9F",
+    "lastKnownWriteTime" : 32088563963658355,
+    "last_content_update" : 1539760940425,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
