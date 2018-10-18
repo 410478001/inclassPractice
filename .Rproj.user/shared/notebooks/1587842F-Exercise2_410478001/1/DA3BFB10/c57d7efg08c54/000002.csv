@@ -1,4 +1,5 @@
-"0","as.factor(bankdata$""銀行"")->bankdata$""銀行"""
+"0","iPeenData$""均消""<-as.numeric(iPeenData$""均消"")
+"
 "2","Warning message:
 "
 "2","In strsplit(code, ""\n"", fixed = TRUE) :"

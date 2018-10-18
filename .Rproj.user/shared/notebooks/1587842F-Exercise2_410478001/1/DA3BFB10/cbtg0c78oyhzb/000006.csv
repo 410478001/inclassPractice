@@ -1,0 +1,3 @@
+"0","library(stringr)"
+"0","library(lubridate)"
+"0","filmVotingData$Timestamp<-mdy_hms(filmVotingData$Timestamp)"
