@@ -1,5 +1,8 @@
-"0","str_split_fixed(filmVotingData$請選擇你最喜歡的影片二部,c(""by"","",""),4)->z
+"0","str_split_fixed(filmVotingData$請選擇你最喜歡的影片二部,c((""by"",2)("","",2)))->z
 "
+"2","Error: unexpected ',' in ""str_split_fixed(filmVotingData$請選擇你最喜歡的影片二部,c((""by"",""
+"
+"2","In addition: "
 "2","Warning message:
 "
 "2","In strsplit(code, ""\n"", fixed = TRUE) :"
