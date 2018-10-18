@@ -43,7 +43,7 @@ filmVotingData$Timestamp<-mdy_hms(filmVotingData$Timestamp)
 2.2 由於原始資料的時區為UTC，請透過`lubridate::with_tz()`將時區設為"Asia/Taipei"。
 
 ```{r ans22}
-filmVotingData$Timestamp<-with_tz(filmVotingData$Timestamp)
+filmVotingData$Timestamp<-with_tz(filmVotingData$Timestamp,"Asia/Taipei")
 ```
 
 2.3 由Timestamp透過`lubridate::hour()`取出學生上網填表的小時值並存在新的變數`filmVotingData$hour`。  

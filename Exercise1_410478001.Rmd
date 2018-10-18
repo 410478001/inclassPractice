@@ -40,8 +40,12 @@ Google天災地圖會發佈天災時地資訊，如[潭美颱風(Typhoon Trami)]
 library(lubridate)
 t<-c("2018/30/09 00:00 UTC")
 t<-ydm_hm(t)
-t<-lubridate::with_tz(t)
+#t<-with_tz(t)
+
 grep("Taipei",OlsonNames(),value=TRUE)
+t1<-with_tz(t,"Asia/Taipei")
+
+#t2<-with_tz(ydm_hm("2018/30/09 00:00 UTC"),"Asia/Taipei")
 ```
 
 
