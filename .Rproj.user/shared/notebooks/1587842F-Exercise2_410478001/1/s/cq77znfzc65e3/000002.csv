@@ -1,4 +1,12 @@
 "0","library(readr)"
+"2","package ¡¥readr¡¦ was built under R version 3.3.3"
+"2","Warning message:
+"
+"2","In dir.create(tempPath, recursive = TRUE) :"
+"2","
+ "
+"2"," cannot create dir 'D:\', reason 'Permission denied'
+"
 "0","iPeenData <- read_csv(""https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/iPeenData.csv"")"
 "2","Parsed with column specification:
 cols(

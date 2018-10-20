@@ -1,0 +1,26 @@
+---
+title: "HW3_1020"
+output: html_document
+---
+```{r}
+library(lubridate)
+a <- seq(ymd("2018-01-10"),ymd("2019-12-10"),by="month")
+a
+```
+
+```{r}
+set.seed(123)
+Date <- sample(seq(ymd("2018-10-01"), ymd("2018-10-31"), by = 'day'), 10) 
+Date
+x<-wday(Date,week_start = getOption("lubridate.week.start",1))
+```
+
+```{r}
+library(readr)
+source <- "https://raw.githubusercontent.com/GaryLKL/course-programming-for-ds-Quiz/master/AverageSalary.csv"
+salary<-read_csv(source)
+salary<-tail(salary,10)
+c(mean(salary$營造業),max(salary$營造業),min(salary$營造業))
+
+```
+
