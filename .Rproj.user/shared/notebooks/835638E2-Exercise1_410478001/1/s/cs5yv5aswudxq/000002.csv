@@ -7,17 +7,7 @@
 "2"," input string 1 is invalid in this locale
 "
 "0","library(lubridate)"
-"2","package ¡¥lubridate¡¦ was built under R version 3.3.3"
-"2","
-Attaching package: ¡¥lubridate¡¦
-
-"
-"2","The following object is masked from ¡¥package:base¡¦:
-
-    date
-
-"
 "0","bankdata$""å¹´æœˆ""<-str_c(""1"",bankdata$""å¹´æœˆ"",""/01"")"
 "0","bankdata$""å¹´æœˆ""<-ymd(bankdata$""å¹´æœˆ"")"
+"2","All formats failed to parse. No formats found."
 "0","bankdata$""å¹´æœˆ""<-bankdata$""å¹´æœˆ""+years(911)"
-"0","bankdata$""å¹´æœˆ""<-str_sub(bankdata$""å¹´æœˆ"",1,7)"

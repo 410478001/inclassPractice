@@ -30,7 +30,6 @@ library(lubridate)
 bankdata$"年月"<-str_c("1",bankdata$"年月","/01")
 bankdata$"年月"<-ymd(bankdata$"年月")
 bankdata$"年月"<-bankdata$"年月"+years(911)
-bankdata$"年月"<-str_sub(bankdata$"年月",1,7)
 ```
 
 ## 2

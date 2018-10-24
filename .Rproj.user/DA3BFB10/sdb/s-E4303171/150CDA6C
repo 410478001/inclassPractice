@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"practice_1024\"\noutput: html_document\n---\n```{r}\nlibrary(googlesheets)\ngsSurvey<-gs_key(\"1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE\")  #download sheet information as an object\nclassSurvey<-gs_read(gsSurvey,ws=1) #access the 1st worksheet\nclass(classSurvey)\nrownames(classSurvey)\ncolnames(classSurvey)\n```\n```{r}\nStuDF <- data.frame(\n  StuID=c(1,2,3,4,5),\n  name=c(\"小明\",\"大雄\",\"胖虎\",\"小新\",\"大白\"),\n  score=c(80,60,90,70,50),stringasFactor=F\n  )\nStuDF [c(1,4),]\nStuDF[c(T,F,F,F,F),c(F,T,F)]\nStuDF[c(T,F,F,T,F),]\n```\n\n",
+    "created" : 1540366675680.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1929020109",
+    "id" : "150CDA6C",
+    "lastKnownWriteTime" : 32088628386725934,
+    "last_content_update" : 1540368846925,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
