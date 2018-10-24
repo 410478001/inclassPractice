@@ -1,0 +1,9 @@
+"0","classSurvey[(classSurvey$性別 == ""男"" & classSurvey$本學期學分數 > 26),3]
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
