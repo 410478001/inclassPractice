@@ -1,5 +1,3 @@
-"0","classData[which(classData$`公-10-06`==""有看公告""),]
-"
 "2","Warning message:
 "
 "2","In strsplit(code, ""\n"", fixed = TRUE) :"

@@ -1,7 +1,7 @@
 ---
 params:
-  studentID: "你的學號"
-  studentName: "你的名字"
+  studentID: "410478001"
+  studentName: "鄭宇成"
 ---
 存檔時，請用你的學號當延伸檔名。例如：若你的學號為41078392，則請`File->Save As...`存成Exercise3-41078392.Rmd。
 
@@ -92,6 +92,6 @@ hwData$early<-round(hwData$early,digits = 0)
 作業1（即作業代碼為"hw1"）準時交的人中，他們的提早天數分佈如何？請使用`table()`呈現。
 
 ```{r ans25}
-
+table(hwData$early[which(hwData$作業代碼=="hw1")])
 ```
 
