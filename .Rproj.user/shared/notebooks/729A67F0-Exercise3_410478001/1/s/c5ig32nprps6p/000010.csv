@@ -1,5 +1,4 @@
-"0","table(hwData$early[which(hwData$作業代碼==""hw1"")])
-"
+"0","table(hwData$early[which(difftime(deadline,hwData$Timestamp,units=""days"")>0&hwData$作業代碼==""hw1"")])"
 "1","
 "
 "1"," 0 "
@@ -10,7 +9,7 @@
 "1"," 5 "
 "1","
 "
-"1","48 "
+"1","46 "
 "1","12 "
 "1"," 6 "
 "1"," 2 "
