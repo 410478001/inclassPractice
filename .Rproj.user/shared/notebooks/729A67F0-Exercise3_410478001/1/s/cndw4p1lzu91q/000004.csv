@@ -1,13 +1,6 @@
 "0","library(googlesheets)"
-"2","Warning messages:
+"2","Warning message:
 "
-"2","1: "
-"2","In dir.create(tempPath, recursive = TRUE) :"
-"2","
- "
-"2"," cannot create dir 'D:\', reason 'Permission denied'
-"
-"2","2: "
 "2","In strsplit(code, ""\n"", fixed = TRUE) :"
 "2","
  "
@@ -21,10 +14,10 @@
 "2","Accessing worksheet titled '¤½§i»P½m²ß'.
 "
 "1","Downloading: "
-"1","1.6 kB"
+"1","79 B"
 "1","     "
 "1","Downloading: "
-"1","1.6 kB"
+"1","79 B"
 "1","     "
 "1","Downloading: "
 "1","1.6 kB"
