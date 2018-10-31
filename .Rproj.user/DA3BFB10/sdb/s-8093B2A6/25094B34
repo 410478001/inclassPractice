@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"2018_10_31\"\noutput: html_document\n---\n\n```{r}\nlibrary(readr)\nstudent <- read_csv(\"https://raw.githubusercontent.com/tpemartin/course-107-1-programming-for-data-science/master/data/student.csv\")\nlibrary(dplyr)\nlibrary(magrittr)\nstudent %<>% mutate(身高級距=cut(身高,c(0,150,155,160,165,170,175,180,185,200)))\nlevels(student$身高級距)\nlevels(student$身高級距)[1:5]<-c(\"小個子\")\nlevels(student$身高級距)[2:3]<-c(\"中個子\")\nlevels(student$身高級距)[3:5]<-c(\"高個子\")\nlevels(student$身高級距)<-c(rep(\"小個子\",5),rep(\"中個子\",2),rep(\"高個子\",2))\n```\n```{r}\nlibrary(googlesheets)\nlibrary(stringr)\ngsSurvey<-gs_key(\"1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE\")\nclassSurvey<-gs_read(gsSurvey,ws=1) \ndim(classSurvey)\nclassSurvey$年級<-str_sub(classSurvey$學號,2,4)\nclassSurvey$年級<-as.factor(classSurvey$年級)\nlevels(classSurvey$年級)<-c(\"大一\",\"大二\",\"大三\",\"大四\")\n```\n\n",
+    "created" : 1540970832677.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3768250390",
+    "id" : "25094B34",
+    "lastKnownWriteTime" : 32088628386725934,
+    "last_content_update" : 1540975334047,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

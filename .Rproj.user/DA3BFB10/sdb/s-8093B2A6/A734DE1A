@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1540974628923.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A734DE1A",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1540974628923,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "6BB0CC0B",
+        "caption" : "classSurvey",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=classSurvey&cache_key=6BB0CC0B",
+        "displayedObservations" : 59,
+        "environment" : "",
+        "object" : "classSurvey",
+        "preview" : 0,
+        "totalObservations" : 59,
+        "variables" : 9
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
