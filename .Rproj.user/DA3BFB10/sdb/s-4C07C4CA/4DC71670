@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"2018_11_07\"\noutput: html_document\n---\n\n```{r}\nlibrary(stringr)\nlibrary(lubridate)\n民國年月<-c(\"099/01\",\"099/02\",\"099/03\")\n\n# 1\nstr_c(\"1\",民國年月,\"/01\")->民國年月\n\n# 2\nlubridate::ymd(民國年月) -> 民國年月\n\n# 3\n民國年月 + years(911)\n\n民國年月<-c(\"099/01\",\"099/02\",\"099/03\")\n\nlibrary(dplyr)\n# 1\n民國年月 %>% \n  str_c(\"1\", . ,\"/01\") %>%\n  ymd %>%\n  { . + years(911) }\n```\n```{r}\nlibrary(readr)\ncollegeData <- read_csv(\"https://quality.data.gov.tw/dq_download_csv.php?nid=6231&md5_url=dda8fca407131483c1d8cbf3d61cf793\")\nlibrary(dplyr)\nmutate(\n  collegeData,\n  學校代碼=as.factor(學校代碼),\n  學校名稱=as.factor(學校名稱)\n  ) -> collegeData2\n```\n\n",
+    "created" : 1541575406593.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2811223083",
+    "id" : "4DC71670",
+    "lastKnownWriteTime" : 3419473789575321445,
+    "last_content_update" : 1541576108783,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
