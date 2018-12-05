@@ -2,7 +2,7 @@
 params:
   studentID: "410478001"
   studentName: "鄭宇成"
-  repoURL: "你的作業github repo網址"
+  repoURL: "410478001/inclassPractice"
 ---
 存檔時，請用你的學號當延伸檔名。例如：若你的學號為41078392，則請`File->Save As...`存成Exercise4-41078392.Rmd。
 
@@ -117,8 +117,10 @@ NewData1
 將上題轉換的匯率變數名稱中英文拿掉，如原名為"英鎊USD/GBP"則需改成"英鎊"。改題方式會去檢查整個dataframe中需要改的那幾欄的欄位名稱，故最後一行請寫dataframe名稱。
 (hint: `colnames()`支援generic replacement; `str_locate()`可找出元素中某個符號的位置;`str_sub()`可取出所要字元)
 ```{r ans33}
-NewData1%>%mutate_at(vars(contains("USD/")),funs(str_sub(colnames(NewData1),1,2)))
-str_sub(colnames(NewData1),1,2)
+str_locate(colnames(NewData1),"USD/")
+x=c(4,10,15)
+colnames(NewData1)[x]<-str_sub(colnames(NewData1)[x],1,2)
+NewData1
 ```
 
 
